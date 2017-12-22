@@ -113,7 +113,6 @@ extension LYSeparatorTextField: UITextFieldDelegate {
         
         switch self.formatType {
         case .regular:
-            print("")
             // Limit
             if (limitCount > 0 && newLength >= limitCount + newLength / gapNumber) {
                 return false
@@ -122,9 +121,8 @@ extension LYSeparatorTextField: UITextFieldDelegate {
             // Delete
             if string.elementsEqual("") {
                 if (preDeleteIndex%(gapNumber + 1) == 0) {
-                    //                    finalString = [textField.text substringToIndex:preDeleteIndex];
                     let endIndex = finalString.index(finalString.startIndex, offsetBy: preDeleteIndex)
-                    finalString = String(finalString[finalString.startIndex...endIndex])
+                    finalString = String(finalString[finalString.startIndex..<endIndex])
                 }
             }
             // Add

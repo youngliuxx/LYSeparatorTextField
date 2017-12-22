@@ -48,15 +48,15 @@
     _textField2.placeholder = @"separator: ,";
     [self.view addSubview:_textField2];
     
-    // xxxx-xx-xx
+    // 2017-12-15
     _textField3 = [[LYSeparatorTextField alloc] initWithFrame:CGRectMake(space, 220, SCREEN_WIDTH - space*2, 30) format:@"^^^^-^^-^^"];
-    _textField3.placeholder = @"format: xxxx-xx-xx";
+    _textField3.placeholder = @"format: 2017-12-15";
     _textField3.keyboardType = UIKeyboardTypeNumberPad;
     [self.view addSubview:_textField3];
     
     // Day:01 Month:01 Year:2017
     _textField4 = [[LYSeparatorTextField alloc] initWithFrame:CGRectMake(space, 280, SCREEN_WIDTH - space*2, 30) format:@"Day:^^ Month:^^ Year:^^^^"];
-    _textField4.placeholder = @"format: Day:^^ Month:^^ Year:^^^^";
+    _textField4.placeholder = @"format: Day:05 Month:12 Year:2017";
     _textField4.keyboardType = UIKeyboardTypeNumberPad;
     [self.view addSubview:_textField4];
     

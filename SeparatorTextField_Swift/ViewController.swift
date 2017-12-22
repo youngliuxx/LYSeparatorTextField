@@ -30,11 +30,12 @@ class ViewController: UIViewController {
         return temp
     }()
     
-    // xxxx-xx-xx
+    // 2017-12-15
     let textField3: LYSeparatorTextField = {
         () -> LYSeparatorTextField in
         let temp = LYSeparatorTextField.init(frame: CGRect.init(x: space, y: 220, width: SCREEN_WIDTH - space*2, height: 30), formatStr: "^^^^-^^-^^")
-        temp.placeholder = "format: xxxx-xx-xx"
+        temp.placeholder = "format: 2017-12-15"
+        temp.keyboardType = .numberPad
         return temp
     }()
     
@@ -42,7 +43,8 @@ class ViewController: UIViewController {
     let textField4: LYSeparatorTextField = {
         () -> LYSeparatorTextField in
         let temp = LYSeparatorTextField.init(frame: CGRect.init(x: space, y: 280, width: SCREEN_WIDTH - space*2, height: 30), formatStr: "Day:^^ Month:^^ Year:^^^^")
-        temp.placeholder = "format: Day:^^ Month:^^ Year:^^^^"
+        temp.placeholder = "format: Day:05 Month:12 Year:2017"
+        temp.keyboardType = .numberPad
         return temp
     }()
     
@@ -51,6 +53,7 @@ class ViewController: UIViewController {
         () -> LYSeparatorTextField in
         let temp = LYSeparatorTextField.init(frame: CGRect.init(x: space, y: 340, width: SCREEN_WIDTH - space*2, height: 30), formatStr: "^^^-^^^^-^^^^")
         temp.placeholder = "format: 185-0000-0001"
+        temp.keyboardType = .numberPad
         return temp
     }()
     
