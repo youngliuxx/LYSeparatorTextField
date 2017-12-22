@@ -32,7 +32,6 @@
 - (void)setupViews
 {
     CGFloat space = 20.0;
-    
     // 12345-123456
     _textField = [[LYSeparatorTextField alloc] initWithFrame:CGRectMake(space, 100, SCREEN_WIDTH - space*2, 30)
                                                    gapNumber:4
@@ -61,20 +60,19 @@
     _textField4.keyboardType = UIKeyboardTypeNumberPad;
     [self.view addSubview:_textField4];
     
-    // Day:01 Month:01 Year:2017
+    // format: 185-0000-0001
     _textField5 = [[LYSeparatorTextField alloc] initWithFrame:CGRectMake(space, 340, SCREEN_WIDTH - space*2, 30) format:@"^^^-^^^^-^^^^"];
     _textField5.placeholder = @"format: 185-0000-0001";
     _textField5.keyboardType = UIKeyboardTypeNumberPad;
     [self.view addSubview:_textField5];
     
-    _submitBtn = [[UIButton alloc] initWithFrame:CGRectMake(space, 560, SCREEN_WIDTH - space*2, 40)];
+    _submitBtn = [[UIButton alloc] initWithFrame:CGRectMake(space, 460, SCREEN_WIDTH - space*2, 40)];
     [_submitBtn setBackgroundColor:[UIColor grayColor]];
     [_submitBtn setTitle:@"Print Input Text" forState:UIControlStateNormal];
     [self.view addSubview:_submitBtn];
     [_submitBtn addTarget:self action:@selector(tapBtn:) forControlEvents:UIControlEventTouchUpInside];
     
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(keyboardHide:)];
-    tapGestureRecognizer.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tapGestureRecognizer];
 }
 

@@ -30,7 +30,7 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
-- (void)testGetSeparateLength {
+- (void)testGetSeparatorLength {
     LYSeparatorTextField *textField = [[LYSeparatorTextField alloc] initWithFrame:CGRectZero format:@"^^^^-^^-^^"];
     textField.text = @"2017-12-17";
 
@@ -55,17 +55,17 @@
     LYSeparatorTextField *textField2 = [[LYSeparatorTextField alloc] initWithFrame:CGRectZero format:@"Day:^^ Month:^^ Year:^^"];
     textField2.text = @"Day:12 Month:05 Year:2017";
     
-    NSInteger forwarSeprateLength = [textField2 getSeparateLengthWithIndex:4 sequence:LYSeparatorTextFieldSequenceForward];
-    XCTAssertEqual(forwarSeprateLength, 0);
+    NSInteger forwardSeparatorLength = [textField2 getSeparateLengthWithIndex:4 sequence:LYSeparatorTextFieldSequenceForward];
+    XCTAssertEqual(forwardSeparatorLength, 0);
 
-    NSInteger forwarSeprateLength2 = [textField2 getSeparateLengthWithIndex:5 sequence:LYSeparatorTextFieldSequenceForward];
-    XCTAssertEqual(forwarSeprateLength2, 7);
+    NSInteger forwardSeparatorLength2 = [textField2 getSeparateLengthWithIndex:5 sequence:LYSeparatorTextFieldSequenceForward];
+    XCTAssertEqual(forwardSeparatorLength2, 7);
 
-    NSInteger forwarSeprateLength3 = [textField2 getSeparateLengthWithIndex:-1 sequence:LYSeparatorTextFieldSequenceForward];
-    XCTAssertEqual(forwarSeprateLength3, 4);
+    NSInteger forwardSeparatorLength3 = [textField2 getSeparateLengthWithIndex:-1 sequence:LYSeparatorTextFieldSequenceForward];
+    XCTAssertEqual(forwardSeparatorLength3, 4);
     
-    NSInteger forwarSeprateLength4 = [textField2 getSeparateLengthWithIndex:4 sequence:LYSeparatorTextFieldSequenceReverse];
-    XCTAssertEqual(forwarSeprateLength4, 4);
+    NSInteger forwardSeparatorLength4 = [textField2 getSeparateLengthWithIndex:4 sequence:LYSeparatorTextFieldSequenceReverse];
+    XCTAssertEqual(forwardSeparatorLength4, 4);
 }
 
 - (void)testPerformanceExample {

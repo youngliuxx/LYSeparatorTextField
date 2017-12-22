@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6F705ED31FE636A8008CA639 /* SeparatorTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F705ED21FE636A8008CA639 /* SeparatorTextFieldTests.m */; };
+		CD531B3C1FEA2054003F9953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD531B3B1FEA2054003F9953 /* AppDelegate.swift */; };
+		CD531B3E1FEA2054003F9953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD531B3D1FEA2054003F9953 /* ViewController.swift */; };
+		CD531B411FEA2054003F9953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD531B3F1FEA2054003F9953 /* Main.storyboard */; };
+		CD531B431FEA2054003F9953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD531B421FEA2054003F9953 /* Assets.xcassets */; };
+		CD531B461FEA2054003F9953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD531B441FEA2054003F9953 /* LaunchScreen.storyboard */; };
+		CD531B6B1FEA22BA003F9953 /* LYSeparatorTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD531B621FEA22B9003F9953 /* LYSeparatorTextField.framework */; };
+		CD531B721FEA22BA003F9953 /* LYSeparatorTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD531B711FEA22BA003F9953 /* LYSeparatorTextFieldTests.swift */; };
+		CD531B741FEA22BA003F9953 /* LYSeparatorTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = CD531B641FEA22B9003F9953 /* LYSeparatorTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD531B771FEA22BA003F9953 /* LYSeparatorTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD531B621FEA22B9003F9953 /* LYSeparatorTextField.framework */; };
+		CD531B781FEA22BA003F9953 /* LYSeparatorTextField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD531B621FEA22B9003F9953 /* LYSeparatorTextField.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD531B801FEA22E6003F9953 /* LYSeparatorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD531B5B1FEA21F4003F9953 /* LYSeparatorTextField.swift */; };
 		CD6318441FE0C4C400C78B30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6318431FE0C4C400C78B30 /* AppDelegate.m */; };
 		CD6318471FE0C4C400C78B30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6318461FE0C4C400C78B30 /* ViewController.m */; };
 		CD63184A1FE0C4C400C78B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6318481FE0C4C400C78B30 /* Main.storyboard */; };
@@ -25,13 +36,72 @@
 			remoteGlobalIDString = CD63183E1FE0C4C400C78B30;
 			remoteInfo = SeparatorTextField;
 		};
+		CD531B6C1FEA22BA003F9953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6318371FE0C4C400C78B30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD531B611FEA22B9003F9953;
+			remoteInfo = LYSeparatorTextField;
+		};
+		CD531B6E1FEA22BA003F9953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6318371FE0C4C400C78B30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD531B381FEA2054003F9953;
+			remoteInfo = SeparatorTextField_Swift;
+		};
+		CD531B751FEA22BA003F9953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6318371FE0C4C400C78B30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD531B611FEA22B9003F9953;
+			remoteInfo = LYSeparatorTextField;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD531B7C1FEA22BA003F9953 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD531B781FEA22BA003F9953 /* LYSeparatorTextField.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5A4DDA1FEB561500E7ED6D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6F705ED01FE636A8008CA639 /* SeparatorTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeparatorTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F705ED21FE636A8008CA639 /* SeparatorTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeparatorTextFieldTests.m; sourceTree = "<group>"; };
 		6F705ED41FE636A8008CA639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F705EDA1FE67CCA008CA639 /* LYSeparatorTextField+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LYSeparatorTextField+Private.h"; sourceTree = "<group>"; };
+		CD531B391FEA2054003F9953 /* SeparatorTextField_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeparatorTextField_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD531B3B1FEA2054003F9953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD531B3D1FEA2054003F9953 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD531B401FEA2054003F9953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD531B421FEA2054003F9953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD531B451FEA2054003F9953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD531B471FEA2054003F9953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD531B5B1FEA21F4003F9953 /* LYSeparatorTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYSeparatorTextField.swift; sourceTree = "<group>"; };
+		CD531B621FEA22B9003F9953 /* LYSeparatorTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LYSeparatorTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD531B641FEA22B9003F9953 /* LYSeparatorTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYSeparatorTextField.h; sourceTree = "<group>"; };
+		CD531B651FEA22B9003F9953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD531B6A1FEA22BA003F9953 /* LYSeparatorTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYSeparatorTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD531B711FEA22BA003F9953 /* LYSeparatorTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYSeparatorTextFieldTests.swift; sourceTree = "<group>"; };
+		CD531B731FEA22BA003F9953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD63183F1FE0C4C400C78B30 /* SeparatorTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeparatorTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6318421FE0C4C400C78B30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD6318431FE0C4C400C78B30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +124,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD531B361FEA2054003F9953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD531B771FEA22BA003F9953 /* LYSeparatorTextField.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD531B5E1FEA22B9003F9953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD531B671FEA22BA003F9953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD531B6B1FEA22BA003F9953 /* LYSeparatorTextField.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD63183C1FE0C4C400C78B30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,11 +166,55 @@
 			path = SeparatorTextFieldTests;
 			sourceTree = "<group>";
 		};
+		CD531B3A1FEA2054003F9953 /* SeparatorTextField_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				CD531B3B1FEA2054003F9953 /* AppDelegate.swift */,
+				CD531B3D1FEA2054003F9953 /* ViewController.swift */,
+				CD531B3F1FEA2054003F9953 /* Main.storyboard */,
+				CD531B421FEA2054003F9953 /* Assets.xcassets */,
+				CD531B441FEA2054003F9953 /* LaunchScreen.storyboard */,
+				CD531B471FEA2054003F9953 /* Info.plist */,
+			);
+			path = SeparatorTextField_Swift;
+			sourceTree = "<group>";
+		};
+		CD531B591FEA21C2003F9953 /* SeparatorTextField */ = {
+			isa = PBXGroup;
+			children = (
+				CD6318591FE0C4DF00C78B30 /* LYSeparatorTextField.h */,
+				CD6318581FE0C4DE00C78B30 /* LYSeparatorTextField.m */,
+				6F705EDA1FE67CCA008CA639 /* LYSeparatorTextField+Private.h */,
+			);
+			path = SeparatorTextField;
+			sourceTree = "<group>";
+		};
+		CD531B631FEA22B9003F9953 /* LYSeparatorTextField */ = {
+			isa = PBXGroup;
+			children = (
+				CD531B701FEA22BA003F9953 /* LYSeparatorTextFieldTests */,
+				CD531B5B1FEA21F4003F9953 /* LYSeparatorTextField.swift */,
+				CD531B641FEA22B9003F9953 /* LYSeparatorTextField.h */,
+				CD531B651FEA22B9003F9953 /* Info.plist */,
+			);
+			path = LYSeparatorTextField;
+			sourceTree = "<group>";
+		};
+		CD531B701FEA22BA003F9953 /* LYSeparatorTextFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD531B711FEA22BA003F9953 /* LYSeparatorTextFieldTests.swift */,
+				CD531B731FEA22BA003F9953 /* Info.plist */,
+			);
+			path = LYSeparatorTextFieldTests;
+			sourceTree = "<group>";
+		};
 		CD6318361FE0C4C400C78B30 = {
 			isa = PBXGroup;
 			children = (
 				CD6318411FE0C4C400C78B30 /* SeparatorTextField */,
-				6F705ED11FE636A8008CA639 /* SeparatorTextFieldTests */,
+				CD531B3A1FEA2054003F9953 /* SeparatorTextField_Swift */,
+				CD531B631FEA22B9003F9953 /* LYSeparatorTextField */,
 				CD6318401FE0C4C400C78B30 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +224,9 @@
 			children = (
 				CD63183F1FE0C4C400C78B30 /* SeparatorTextField.app */,
 				6F705ED01FE636A8008CA639 /* SeparatorTextFieldTests.xctest */,
+				CD531B391FEA2054003F9953 /* SeparatorTextField_Swift.app */,
+				CD531B621FEA22B9003F9953 /* LYSeparatorTextField.framework */,
+				CD531B6A1FEA22BA003F9953 /* LYSeparatorTextFieldTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +234,7 @@
 		CD6318411FE0C4C400C78B30 /* SeparatorTextField */ = {
 			isa = PBXGroup;
 			children = (
-				CD6318591FE0C4DF00C78B30 /* LYSeparatorTextField.h */,
-				CD6318581FE0C4DE00C78B30 /* LYSeparatorTextField.m */,
-				6F705EDA1FE67CCA008CA639 /* LYSeparatorTextField+Private.h */,
+				CD531B591FEA21C2003F9953 /* SeparatorTextField */,
 				CD6318421FE0C4C400C78B30 /* AppDelegate.h */,
 				CD6318431FE0C4C400C78B30 /* AppDelegate.m */,
 				CD6318451FE0C4C400C78B30 /* ViewController.h */,
@@ -106,11 +244,23 @@
 				CD63184D1FE0C4C400C78B30 /* LaunchScreen.storyboard */,
 				CD6318501FE0C4C400C78B30 /* Info.plist */,
 				CD6318511FE0C4C400C78B30 /* main.m */,
+				6F705ED11FE636A8008CA639 /* SeparatorTextFieldTests */,
 			);
 			path = SeparatorTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD531B5F1FEA22B9003F9953 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD531B741FEA22BA003F9953 /* LYSeparatorTextField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		6F705ECF1FE636A8008CA639 /* SeparatorTextFieldTests */ = {
@@ -131,6 +281,62 @@
 			productReference = 6F705ED01FE636A8008CA639 /* SeparatorTextFieldTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CD531B381FEA2054003F9953 /* SeparatorTextField_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD531B571FEA2054003F9953 /* Build configuration list for PBXNativeTarget "SeparatorTextField_Swift" */;
+			buildPhases = (
+				CD531B351FEA2054003F9953 /* Sources */,
+				CD531B361FEA2054003F9953 /* Frameworks */,
+				CD531B371FEA2054003F9953 /* Resources */,
+				CD531B7C1FEA22BA003F9953 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD531B761FEA22BA003F9953 /* PBXTargetDependency */,
+			);
+			name = SeparatorTextField_Swift;
+			productName = SeparatorTextField_Swift;
+			productReference = CD531B391FEA2054003F9953 /* SeparatorTextField_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD531B611FEA22B9003F9953 /* LYSeparatorTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD531B791FEA22BA003F9953 /* Build configuration list for PBXNativeTarget "LYSeparatorTextField" */;
+			buildPhases = (
+				CD531B5D1FEA22B9003F9953 /* Sources */,
+				CD531B5E1FEA22B9003F9953 /* Frameworks */,
+				CD531B5F1FEA22B9003F9953 /* Headers */,
+				CD531B601FEA22B9003F9953 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYSeparatorTextField;
+			productName = LYSeparatorTextField;
+			productReference = CD531B621FEA22B9003F9953 /* LYSeparatorTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD531B691FEA22BA003F9953 /* LYSeparatorTextFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD531B7D1FEA22BA003F9953 /* Build configuration list for PBXNativeTarget "LYSeparatorTextFieldTests" */;
+			buildPhases = (
+				CD531B661FEA22BA003F9953 /* Sources */,
+				CD531B671FEA22BA003F9953 /* Frameworks */,
+				CD531B681FEA22BA003F9953 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD531B6D1FEA22BA003F9953 /* PBXTargetDependency */,
+				CD531B6F1FEA22BA003F9953 /* PBXTargetDependency */,
+			);
+			name = LYSeparatorTextFieldTests;
+			productName = LYSeparatorTextFieldTests;
+			productReference = CD531B6A1FEA22BA003F9953 /* LYSeparatorTextFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CD63183E1FE0C4C400C78B30 /* SeparatorTextField */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD6318551FE0C4C400C78B30 /* Build configuration list for PBXNativeTarget "SeparatorTextField" */;
@@ -138,6 +344,7 @@
 				CD63183B1FE0C4C400C78B30 /* Sources */,
 				CD63183C1FE0C4C400C78B30 /* Frameworks */,
 				CD63183D1FE0C4C400C78B30 /* Resources */,
+				CD5A4DDA1FEB561500E7ED6D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +361,7 @@
 		CD6318371FE0C4C400C78B30 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = xx;
 				TargetAttributes = {
@@ -162,8 +370,22 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = CD63183E1FE0C4C400C78B30;
 					};
+					CD531B381FEA2054003F9953 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					CD531B611FEA22B9003F9953 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					CD531B691FEA22BA003F9953 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD531B381FEA2054003F9953;
+					};
 					CD63183E1FE0C4C400C78B30 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -183,12 +405,39 @@
 			targets = (
 				CD63183E1FE0C4C400C78B30 /* SeparatorTextField */,
 				6F705ECF1FE636A8008CA639 /* SeparatorTextFieldTests */,
+				CD531B381FEA2054003F9953 /* SeparatorTextField_Swift */,
+				CD531B611FEA22B9003F9953 /* LYSeparatorTextField */,
+				CD531B691FEA22BA003F9953 /* LYSeparatorTextFieldTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6F705ECE1FE636A8008CA639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD531B371FEA2054003F9953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD531B461FEA2054003F9953 /* LaunchScreen.storyboard in Resources */,
+				CD531B431FEA2054003F9953 /* Assets.xcassets in Resources */,
+				CD531B411FEA2054003F9953 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD531B601FEA22B9003F9953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD531B681FEA22BA003F9953 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,6 +465,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD531B351FEA2054003F9953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD531B3E1FEA2054003F9953 /* ViewController.swift in Sources */,
+				CD531B3C1FEA2054003F9953 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD531B5D1FEA22B9003F9953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD531B801FEA22E6003F9953 /* LYSeparatorTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD531B661FEA22BA003F9953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD531B721FEA22BA003F9953 /* LYSeparatorTextFieldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD63183B1FE0C4C400C78B30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,9 +509,40 @@
 			target = CD63183E1FE0C4C400C78B30 /* SeparatorTextField */;
 			targetProxy = 6F705ED51FE636A8008CA639 /* PBXContainerItemProxy */;
 		};
+		CD531B6D1FEA22BA003F9953 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD531B611FEA22B9003F9953 /* LYSeparatorTextField */;
+			targetProxy = CD531B6C1FEA22BA003F9953 /* PBXContainerItemProxy */;
+		};
+		CD531B6F1FEA22BA003F9953 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD531B381FEA2054003F9953 /* SeparatorTextField_Swift */;
+			targetProxy = CD531B6E1FEA22BA003F9953 /* PBXContainerItemProxy */;
+		};
+		CD531B761FEA22BA003F9953 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD531B611FEA22B9003F9953 /* LYSeparatorTextField */;
+			targetProxy = CD531B751FEA22BA003F9953 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CD531B3F1FEA2054003F9953 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD531B401FEA2054003F9953 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD531B441FEA2054003F9953 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD531B451FEA2054003F9953 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		CD6318481FE0C4C400C78B30 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +589,127 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeparatorTextField.app/SeparatorTextField";
+			};
+			name = Release;
+		};
+		CD531B531FEA2054003F9953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45S5A63C6K;
+				INFOPLIST_FILE = SeparatorTextField_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.young.SeparatorTextField-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD531B541FEA2054003F9953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45S5A63C6K;
+				INFOPLIST_FILE = SeparatorTextField_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.young.SeparatorTextField-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD531B7A1FEA22BA003F9953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 45S5A63C6K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LYSeparatorTextField/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.young.LYSeparatorTextField;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD531B7B1FEA22BA003F9953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 45S5A63C6K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LYSeparatorTextField/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.young.LYSeparatorTextField;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD531B7E1FEA22BA003F9953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45S5A63C6K;
+				INFOPLIST_FILE = LYSeparatorTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.young.LYSeparatorTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeparatorTextField_Swift.app/SeparatorTextField_Swift";
+			};
+			name = Debug;
+		};
+		CD531B7F1FEA22BA003F9953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45S5A63C6K;
+				INFOPLIST_FILE = LYSeparatorTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.young.LYSeparatorTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeparatorTextField_Swift.app/SeparatorTextField_Swift";
 			};
 			name = Release;
 		};
@@ -395,11 +821,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SeparatorTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.young.SeparatorTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SeparatorTextField____/SeparatorTextField-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -408,11 +838,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SeparatorTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.young.SeparatorTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SeparatorTextField____/SeparatorTextField-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -425,6 +858,33 @@
 			buildConfigurations = (
 				6F705ED81FE636A8008CA639 /* Debug */,
 				6F705ED91FE636A8008CA639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD531B571FEA2054003F9953 /* Build configuration list for PBXNativeTarget "SeparatorTextField_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD531B531FEA2054003F9953 /* Debug */,
+				CD531B541FEA2054003F9953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD531B791FEA22BA003F9953 /* Build configuration list for PBXNativeTarget "LYSeparatorTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD531B7A1FEA22BA003F9953 /* Debug */,
+				CD531B7B1FEA22BA003F9953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD531B7D1FEA22BA003F9953 /* Build configuration list for PBXNativeTarget "LYSeparatorTextFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD531B7E1FEA22BA003F9953 /* Debug */,
+				CD531B7F1FEA22BA003F9953 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

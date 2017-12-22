@@ -86,8 +86,8 @@ typedef NS_ENUM(NSUInteger, LYSeparatorTextFieldFormat) {
             // Delete
             if ([string isEqualToString:@""]) {
                 if ((range.location - 1) > 0 ) {
-                    NSUInteger separateLength = [self getSeparateLengthWithIndex:preDeleteIndex sequence:LYSeparatorTextFieldSequenceReverse];
-                    finalString = [textField.text substringToIndex:preDeleteIndex - separateLength];
+                    NSUInteger separatorLength = [self getSeparatorLengthWithIndex:preDeleteIndex sequence:LYSeparatorTextFieldSequenceReverse];
+                    finalString = [textField.text substringToIndex:preDeleteIndex - separatorLength];
                     textField.text = finalString;
                     return NO;
                 }
@@ -99,7 +99,6 @@ typedef NS_ENUM(NSUInteger, LYSeparatorTextFieldFormat) {
                 if (currentIndex >= _formatString.length) {
                     return NO;
                 }
-                NSUInteger preAddLength = preAddLength;
                 NSString *preAddChar = string;
                 NSString *formatChar = [_formatString substringWithRange:NSMakeRange(currentIndex, 1)];
                 if ([self isPlaceholdCharacter:formatChar]) {
@@ -107,8 +106,8 @@ typedef NS_ENUM(NSUInteger, LYSeparatorTextFieldFormat) {
                 }
                 else {
                     NSInteger preCurrentIndex = currentIndex - 1;
-                    NSUInteger separateLength = [self getSeparateLengthWithIndex:preCurrentIndex sequence:LYSeparatorTextFieldSequenceForward];
-                    for (NSUInteger i = 0; i < separateLength; i++) {
+                    NSUInteger separatorLength = [self getSeparatorLengthWithIndex:preCurrentIndex sequence:LYSeparatorTextFieldSequenceForward];
+                    for (NSUInteger i = 0; i < separatorLength; i++) {
                         NSString *formatChar = [_formatString substringWithRange:NSMakeRange(currentIndex + i, 1)];
                         finalString = [finalString stringByAppendingString:formatChar];
                     }
@@ -129,25 +128,25 @@ typedef NS_ENUM(NSUInteger, LYSeparatorTextFieldFormat) {
 #pragma mark - private methods
 
 /*
- * getSeparateLength
+ * getSeparatorLength
  * formatString: ^^^^-^^--^
  * input index: 9
  * output: 2
  */
-- (NSUInteger)getSeparateLengthWithIndex:(NSInteger)preOperationIndex sequence:(LYSeparatorTextFieldSequence)sequence
+- (NSUInteger)getSeparatorLengthWithIndex:(NSInteger)preOperationIndex sequence:(LYSeparatorTextFieldSequence)sequence
 {
-    NSUInteger finalSeparateLength = 0;
+    NSUInteger finalSeparatorLength = 0;
     switch (sequence) {
         case LYSeparatorTextFieldSequenceReverse: {
             for (NSInteger i = 1; i <= preOperationIndex; i++) {
                 NSString *preDeleteFormatStr = [self.formatString substringWithRange:NSMakeRange(preOperationIndex - i, 1)];
-                // 是分隔符
-                if (![preDeleteFormatStr isEqualToString:PLACEHOLDER_CHAR]) {
-                    finalSeparateLength = i;
+                // Separator
+                if (![self isPlaceholdCharacter:preDeleteFormatStr]) {
+                    finalSeparatorLength = i;
                 }
-                // 不是分隔符直接返回
+                // Not a separator
                 else {
-                    return finalSeparateLength;
+                    return finalSeparatorLength;
                 }
             }
             break;
@@ -156,13 +155,13 @@ typedef NS_ENUM(NSUInteger, LYSeparatorTextFieldFormat) {
             NSInteger formatStringLength = self.formatString.length;
             for (NSInteger i = preOperationIndex; i < formatStringLength; i++) {
                 NSString *preAddFormatStr = [self.formatString substringWithRange:NSMakeRange(i + 1, 1)];
-                // 是分隔符
-                if (![preAddFormatStr isEqualToString:PLACEHOLDER_CHAR]) {
-                    finalSeparateLength = i - preOperationIndex + 1;
+                // Separator
+                if (![self isPlaceholdCharacter:preAddFormatStr]) {
+                    finalSeparatorLength = i - preOperationIndex + 1;
                 }
-                // 不是分隔符直接返回
+                // Not a separator
                 else {
-                    return finalSeparateLength;
+                    return finalSeparatorLength;
                 }
             }
             break;
@@ -170,7 +169,7 @@ typedef NS_ENUM(NSUInteger, LYSeparatorTextFieldFormat) {
         default:
             break;
     }
-    return finalSeparateLength;
+    return finalSeparatorLength;
 }
 
 - (BOOL)isPlaceholdCharacter:(NSString *)aCharacter
