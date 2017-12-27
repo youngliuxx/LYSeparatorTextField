@@ -17,6 +17,6 @@ typedef NS_ENUM(NSUInteger, LYSeparatorTextFieldSequence) {
 
 @property (nonatomic, copy) NSString *formatString;
 
-- (NSUInteger)getSeparateLengthWithIndex:(NSInteger)preDeleteIndex sequence:(LYSeparatorTextFieldSequence)sequence;
+- (NSUInteger)getSeparatorLengthWithIndex:(NSInteger)preDeleteIndex sequence:(LYSeparatorTextFieldSequence)sequence;
 
 @end
